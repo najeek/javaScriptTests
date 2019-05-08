@@ -1,0 +1,75 @@
+body {
+    font-family: 'PT Serif', serif;
+}
+h1, h2 {
+    text-align: center;
+}
+.wrapper {
+    width: 40%;
+    margin: auto;
+    border: 5px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 6px 5px #888;
+    padding: 20px;
+}
+@keyframes fade {
+    0% { box-shadow: 2px 6px 5px #888; }
+    100% { box-shadow: 2px 6px 5px 2px #888; }
+}
+.wrapper:hover {
+    animation: fade 1s forwards; 
+}
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    width: 95%;
+    min-height: 200px;
+    margin: 20px auto;
+}
+.img-container img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+.answer-block {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.unit {
+    font-size: 20px;
+    transition: .5s color;
+    transition: .5s word-spacing;
+
+}
+.unit:hover {
+    cursor: pointer;
+    color: dodgerblue;
+    background-color: #eff6fc;
+    word-spacing: 5px;
+}
+.correct {
+    background-color: #4caf50;
+
+}
+.wrong {
+    background-color: #df3b49;
+}
+.user-score {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .wrapper {
+        width: 90%;
+    }
+}
